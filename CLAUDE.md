@@ -26,6 +26,30 @@ Moniepoint (moniepoint.com): one-line summary to fill in after research.
 - `work-log/`: one file per ISO week logging every change. Read and update whenever work is done.
 - `.claude/skills/`: custom skills for this workspace. Read when a task matches a defined skill.
 
+## Skills
+
+In `.claude/skills/` (from the gtm-starter-kit repo). Invoke when a task matches.
+
+- `agent-browser`: drive a browser to click, fill forms, log in, screenshot, and pull data from interactive sites.
+- `build-clay`: build, audit, repair, or extend a production Clay outbound workbook (Companies and People tables).
+- `build-workflow-spec`: turn one campaign idea into a fully gated outbound workflow spec in output/campaigns.
+- `calculate-costs`: report the dollar spend and Clay credits used by a Clay table's AI and action columns.
+- `campaign-contract`: write contract.md, the Markdown build sheet for one Clay campaign, from an approved decision.
+- `campaign-copy`: write and QA outbound copy (cold emails and LinkedIn DMs) from an approved workflow spec.
+- `campaign-qa`: QA a Clay table or Instantly/PlusVibe campaign against its workflow spec.
+- `campaign-strategy`: generate 15 to 25 cold outbound campaign ideas with targeting, value prop, and priority.
+- `clay-build-plan`: turn a workflow spec into a step-by-step Clay build guide plus a swimlane flow diagram.
+- `crawl4ai`: crawl pages or whole sites into clean Markdown or JSON, free and local.
+- `design-clay-table-json`: write the Clay table JSON (flow blueprint) for one campaign from its contract.
+- `export-tables`: export one or more Clay tables to local CSV files.
+- `import-clay-table`: import a Clay table JSON, prove paid columns on sample rows, then run within budget.
+- `inbox-placement-test`: run an end-to-end cold email inbox placement test and score each sender pool.
+- `miro-gtm-flowchart`: draw a GTM system as an editable flow chart on a Miro board.
+- `prompt-builder`: build or repair a reusable prompt, such as a Clay AI column's per-row prompt.
+- `save-clay-schema`: save an approved Clay table to the local registry as portable JSON.
+- `signal-matrix`: build ICP and signal matrices that group buyers into targetable segments.
+- `workspace-cost-audit`: report a whole Clay workspace's monthly spend by table, integration, and model.
+
 ## Rules
 
 - Cite a source for every company fact.
@@ -36,4 +60,13 @@ Moniepoint (moniepoint.com): one-line summary to fill in after research.
 
 ## Tools
 
-(empty for now)
+GTM stack I use:
+
+- Clay: data enrichment and outbound list building.
+- HubSpot: CRM and marketing automation.
+- n8n: workflow automation and integrations.
+- treg: CLI for paid data lookups. Check the price before every call.
+- Miro: MCP for diagrams.
+- Notion: MCP where we publish finished docs. GitHub stays the source of truth.
+
+Local tool scripts live in `tools/`: agent-browser, crawl4ai, rex (unofficial Clay API client).
