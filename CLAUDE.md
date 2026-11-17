@@ -17,6 +17,7 @@ Key context files:
 - GTM system: `context/docs/gtm-system.md`
 - Case studies: `context/docs/case-studies.md`
 - Research: `context/docs/research/company.md`, `customers.md`, `competitors.md`, `market.md`, `signals.md`, `voice.md`
+- Campaign strategy: `output/campaigns/campaign-strategy.md`
 - Workflow specs: `output/campaigns/first-loan-on-sales-history/workflow-spec.md`
 
 ## How this folder works
