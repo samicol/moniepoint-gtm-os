@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-GTM Context OS for Moniepoint. In-house GTM team workspace.
+GTM Context OS for Moniepoint. Built by an independent GTM consultant; not an official Moniepoint workspace.
 
 ## Company
 

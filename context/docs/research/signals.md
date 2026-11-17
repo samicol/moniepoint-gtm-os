@@ -2,7 +2,7 @@
 
 Public evidence of what makes a company (or the broader market) need Moniepoint now: funding, expansion, licensing, leadership, deadlines. Every fact carries a source URL and the date checked. Quotes are exact. INFERRED marks reasoning. "Not found" marks unknowns.
 
-Note: This workspace sells FOR Moniepoint (in-house GTM). So "signals" here are read two ways: (a) signals in Moniepoint's own trajectory, and (b) signal types that indicate a target merchant/business needs Moniepoint. Both are captured below.
+Note: This workspace does GTM work for Moniepoint as an independent consultant (not in-house). So "signals" here are read two ways: (a) signals in Moniepoint's own trajectory, and (b) signal types that indicate a target merchant/business needs Moniepoint. Both are captured below.
 
 All items checked on 2026-11-17.
 
