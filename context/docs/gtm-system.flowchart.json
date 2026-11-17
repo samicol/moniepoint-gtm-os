@@ -1,0 +1,51 @@
+{
+  "title": "Moniepoint Outbound GTM System",
+  "subtitle": "Programmatic outbound motion from context/docs/gtm-system.md. Tier 1 dense-market traders route out to a field motion by design.",
+  "rows": [
+    {"title": "Find and qualify accounts", "direction": "ltr", "columns": ["1A", "1B", "1C", "1D", "1E", "1F", "1G"]},
+    {"title": "Route, find people, reach out", "direction": "rtl", "columns": ["2A", "2B", "2C", "2D"]},
+    {"title": "Handle replies, record, learn", "direction": "ltr", "columns": ["3A", "3B", "3C", "3D"]}
+  ],
+  "nodes": {
+    "1A": {"kind": "start", "title": "Context OS", "sub": ["ICP and personas", "Signal matrix, offer"], "tools": ["claude_code", "github"]},
+    "1B": {"kind": "step", "title": "Buying signals", "sub": ["W1 first-party base", "W2 new branch", "W3 competitor gateway", "W4 new CAC reg", "W5 multi-outlet hiring"], "tools": ["n8n", "clay"]},
+    "1C": {"kind": "step", "title": "Find companies", "sub": ["Places, BuiltWith", "CAC, job boards"], "tools": ["clay"]},
+    "1D": {"kind": "decision", "title": "Customer?"},
+    "1Dx": {"kind": "exit", "title": "First-party lifecycle", "sub": "W1 cross-sell, not cold", "below": "1D"},
+    "1E": {"kind": "step", "title": "Enrichment", "sub": ["Firmographics, outlets", "Tech stack, registration"], "tools": ["clay"]},
+    "1F": {"kind": "decision", "title": "ICP fit?"},
+    "drop": {"kind": "exit", "title": "Drop", "sub": "Outside market or wrong buyer", "below": "1F"},
+    "1G": {"kind": "decision", "title": "Has footprint?"},
+    "field": {"kind": "exit", "title": "Field-agent queue", "sub": "Tier 1, no digital footprint", "below": "1G"},
+    "2A": {"kind": "step", "title": "Route by segment", "sub": ["Tier 2 / online / Tier 3", "Angle + lead product"], "tools": ["clay", "hubspot"]},
+    "2B": {"kind": "step", "title": "Find people", "sub": ["Champion, economic buyer,", "influencer by persona"], "tools": ["clay"]},
+    "2C": {"kind": "step", "title": "Find + verify email", "sub": ["Waterfall then verify", "Downgrade channel if risky"], "tools": ["clay"]},
+    "2D": {"kind": "step", "title": "Sequence", "sub": ["Email + LinkedIn cadence", "Copy routed by signal"], "tools": ["n8n", "plusvibe"]},
+    "3A": {"kind": "decision", "title": "Reply?"},
+    "nurture": {"kind": "exit", "title": "Nurture", "sub": "Re-enter on next signal", "below": "3A"},
+    "3B": {"kind": "step", "title": "Classify + action", "sub": ["Positive: onboard or rep", "Objection, referral, suppress"], "tools": ["n8n", "hubspot"]},
+    "3C": {"kind": "step", "title": "CRM system of record", "sub": ["Dedupe, suppression", "Lifecycle stage"], "tools": ["hubspot"]},
+    "3D": {"kind": "start", "title": "Weekly review", "sub": ["Metrics to Context OS", "Scale, iterate, or kill"], "tools": ["hubspot", "github"], "align": "bottom"}
+  },
+  "edges": [
+    ["1A", "1B"],
+    ["1B", "1C"],
+    ["1C", "1D"],
+    ["1D", "1Dx", "Yes"],
+    ["1D", "1E", "No"],
+    ["1E", "1F"],
+    ["1F", "drop", "No"],
+    ["1F", "1G", "Yes"],
+    ["1G", "field", "No"],
+    ["1G", "2A", "Pass"],
+    ["2A", "2B"],
+    ["2B", "2C"],
+    ["2C", "2D"],
+    ["2D", "3A"],
+    ["3A", "nurture", "No reply"],
+    ["3A", "3B", "Reply"],
+    ["3B", "3C"],
+    ["3C", "3D"]
+  ],
+  "loop": {"from": "3D", "to": "1A", "label": "Weekly loop: results update the Context OS"}
+}

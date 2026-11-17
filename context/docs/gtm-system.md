@@ -1,5 +1,7 @@
 # Moniepoint Outbound GTM System
 
+**Miro board:** https://miro.com/app/board/uXjVEMyzRWs=/ (flow chart of this system, built from `context/docs/gtm-system.flowchart.json`).
+
 End-to-end design of the outbound motion, built from `context/icp/icp.md`, `context/icp/personas.md` and `context/icp/signal-matrix.md`. Source tags: [icp], [personas], [matrix] point to those files. INFERRED marks tooling or logic not fixed by those files (the declared stack is Clay, HubSpot, n8n per CLAUDE.md; sourcing/sending tools come from the signal matrix and skills, and specific vendors below are reasoned choices to confirm).
 
 ## Scope and honest boundary
