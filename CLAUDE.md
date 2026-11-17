@@ -10,7 +10,10 @@ Key context files:
 
 - ICP: `context/icp/icp.md`
 - Personas: `context/icp/personas.md`
-- Research: `context/docs/research/` (company, customers, competitors, market, signals, voice)
+- Signal matrix: `context/icp/signal-matrix.md`
+- GTM system: `context/docs/gtm-system.md`
+- Research: `context/docs/research/company.md`, `customers.md`, `competitors.md`, `market.md`, `signals.md`, `voice.md`
+- Workflow specs: `output/campaigns/first-loan-on-sales-history/workflow-spec.md`
 
 ## How this folder works
 
