@@ -81,6 +81,6 @@ GTM stack I use:
 - n8n: workflow automation and integrations.
 - treg: CLI for paid data lookups. Check the price before every call.
 - Miro: MCP for diagrams.
-- Notion: MCP where we publish finished docs. GitHub stays the source of truth.
+- Notion: MCP where we publish finished docs. GitHub stays the source of truth. Published Context OS: https://app.notion.com/p/41b7cb0fc42d81188a89e5eb14f9a9ac
 
 Local tool scripts live in `tools/`: agent-browser, crawl4ai, rex (unofficial Clay API client).
