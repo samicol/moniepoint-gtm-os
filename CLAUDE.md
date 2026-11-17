@@ -11,7 +11,11 @@ Key context files:
 - ICP: `context/icp/icp.md`
 - Personas: `context/icp/personas.md`
 - Signal matrix: `context/icp/signal-matrix.md`
+- Positioning: `context/positioning/positioning.md`, `value-proposition.md`, `competitors.md`
+- Messaging: `context/messaging/messaging.md`
+- Brand: `context/brand-kit/brand.md`
 - GTM system: `context/docs/gtm-system.md`
+- Case studies: `context/docs/case-studies.md`
 - Research: `context/docs/research/company.md`, `customers.md`, `competitors.md`, `market.md`, `signals.md`, `voice.md`
 - Workflow specs: `output/campaigns/first-loan-on-sales-history/workflow-spec.md`
 
