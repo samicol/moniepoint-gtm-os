@@ -4,7 +4,13 @@ GTM Context OS for Moniepoint. In-house GTM team workspace.
 
 ## Company
 
-Moniepoint (moniepoint.com): one-line summary to fill in after research.
+Moniepoint (moniepoint.com): a global business payments and banking platform, Nigeria's largest merchant acquirer, serving over 1.5 million businesses with payments, POS/agency banking, credit and bookkeeping; mission is "financial happiness." (Sources in `context/docs/research/`.)
+
+Key context files:
+
+- ICP: `context/icp/icp.md`
+- Personas: `context/icp/personas.md`
+- Research: `context/docs/research/` (company, customers, competitors, market, signals, voice)
 
 ## How this folder works
 
