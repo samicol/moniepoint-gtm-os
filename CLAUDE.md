@@ -12,7 +12,7 @@ Key context files:
 - Personas: `context/icp/personas.md`
 - Signal matrix: `context/icp/signal-matrix.md`
 - Positioning: `context/positioning/positioning.md`, `value-proposition.md`, `competitors.md`
-- Messaging: `context/messaging/messaging.md`
+- Messaging: `context/messaging/messaging.md`, `facts.md` (authorized copy facts)
 - Brand: `context/brand-kit/brand.md`
 - GTM system: `context/docs/gtm-system.md`
 - Case studies: `context/docs/case-studies.md`

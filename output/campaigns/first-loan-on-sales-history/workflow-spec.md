@@ -1,6 +1,6 @@
 # First Loan on Your Sales History
 
-**Status:** STRUCTURE-APPROVED 2026-11-17 · copy pending
+**Status:** COPY-APPROVED 2026-11-17 (3 emails + 2 LinkedIn DMs) · NOT cleared to send: first-party-data clearance, a Dipo result, and a sender display name still pending (see context/messaging/facts.md)
 
 Outbound (cross-sell) workflow spec. Structure only; no copy. Built with `build-workflow-spec` from `context/icp/` (icp, personas, signal-matrix) and `context/docs/gtm-system.md`. This is Workflow A (W1) from `context/icp/signal-matrix.md`: the first-party loan cross-sell.
 
@@ -114,3 +114,88 @@ Data-must-exist: copy may only reference a variable listed here. Numbers resolve
 ## Next step
 
 `/campaign-copy` reads this file, confirms the angles, and writes the narrative under its own line laws. Any angle flaw gets fixed here and re-approved, never patched inline in copy.
+
+---
+
+## Copy
+
+**Status:** COPY-APPROVED 2026-11-17. Owned-channel / lifecycle register (existing merchants). Facts source: `context/messaging/facts.md`. NOT cleared to send until: first-party-data clearance, an approved one-line Dipo result, and a sender display name. No approved stat claims were used (owner approved none). Reviewed against the persona and the human test on 2026-11-17.
+
+### Email 1
+
+**Subject:** your sales, your loan
+
+```
+{{first_name}},
+
+{{e1l1}}
+It runs on the sales you already make, so there is nothing new to prove.
+You borrow against those sales, not collateral, and take only what you need.
+Want to see your amount?
+
+{{sender_signature}}
+```
+
+`{{e1l1}}` is dynamic, routed by the six cells (amount x trend). Exhaustive by construction, so no fallback.
+
+- **Small x Growing:** Your sales on Moniepoint have been climbing, and you now pre-qualify for a first loan of {{prequalified_amount}} to stock up ahead of demand.
+- **Small x Steady:** Your takings on Moniepoint pre-qualify you for a first working loan of {{prequalified_amount}}, a cushion for bulk stock or a slow week.
+- **Mid x Growing:** Your sales on Moniepoint are growing, and you pre-qualify for {{prequalified_amount}} to fund the expansion you are already making.
+- **Mid x Steady:** Your track record on Moniepoint pre-qualifies you for {{prequalified_amount}}, ready for bulk buying or better supplier terms.
+- **Large x Growing:** Your sales on Moniepoint are scaling fast, and you pre-qualify for {{prequalified_amount}} to fund your next big stock order or location.
+- **Large x Steady:** Your volume on Moniepoint pre-qualifies you for {{prequalified_amount}}, a line to win better supplier pricing without touching your reserves.
+
+### Email 2 (same thread, Re: your sales, your loan)
+
+```
+{{first_name}},
+
+Most owners want to know the catch before they touch a loan.
+There is nothing hidden here. You see the amount and what it costs before you take a kobo, then you decide.
+{{e2l1}}
+Should I send the breakdown for {{business_name}}?
+
+{{sender_signature}}
+```
+
+`{{e2l1}}` by trend (exhaustive on trend, no fallback):
+- **Growing:** As your sales keep climbing, the amount climbs with them.
+- **Steady:** Your steady sales are exactly what this is built for.
+
+### Email 3 (same thread)
+
+```
+{{first_name}},
+
+I will not keep knocking.
+If the timing is wrong, that is fine. Your amount stays ready for whenever you want it.
+And if another shop owner you know could use this, point them my way.
+
+{{sender_signature}}
+```
+
+### LinkedIn
+
+Connection request: empty (no note).
+
+**DM 1** (by trend):
+- **Growing:** {{first_name}}, quick question. Your sales look like they are growing. Is the stock usually ready to match, or does cash hold you back?
+- **Steady / default:** {{first_name}}, quick question. What usually holds you back from buying more stock at once, cash or something else?
+
+**DM 2** (static):
+```
+No rush. Moniepoint now lends to shops against their own sales, so you can stock up without waiting on cash. Happy to show how it would work for yours.
+```
+
+### Assembled sample (Email 1, Mid x Steady, illustrative values)
+
+> Adaeze,
+> Your track record on Moniepoint pre-qualifies you for 2,500,000 naira, ready for bulk buying or better supplier terms.
+> It runs on the sales you already make, so there is nothing new to prove.
+> You borrow against those sales, not collateral, and take only what you need.
+> Want to see your amount?
+
+### Copy notes
+
+- Dipo (authorized name-drop) was removed from Email 1 at human-test review: a bare name with no approved result reads as a template slot. Add it back once facts.md carries a one-line Dipo result.
+- Email export (`sequencer-export.md`) not generated yet; this is an owned-channel sequence, and send is blocked pending the items above.
